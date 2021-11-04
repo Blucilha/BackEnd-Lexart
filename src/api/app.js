@@ -12,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(routes.buscapeRouter);
+app.use(routes.mercadoLivreRouter);
 
 app.use(handleError);
 
