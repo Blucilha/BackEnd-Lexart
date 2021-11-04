@@ -1,5 +1,5 @@
 const mercadoLivreModel = require('../models/mercadoLivreModel');
-const inforCompleteItems = require('../externalApi/buscapeScraping');
+const inforCompleteItems = require('../externalApi/apiMLB');
 const schemas = require('../schemas/mercadoLivreSchema');
 const clientError = require('../utils/clientError');
 
