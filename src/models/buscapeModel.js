@@ -2,10 +2,10 @@ const connection = require('./connect');
 
 const COLLECTION = 'buscape';
 
-const createListSearch = async (items) => {
+const createListSearch = async (item) => {
     const db = await connection();
     try {
-        const result = db.collection(COLLECTION).insertOne(items);
+        const result = db.collection(COLLECTION).insertOne(item);
         return result;
     } catch (err) {
         console.error(err.message);
