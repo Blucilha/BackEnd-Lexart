@@ -4,6 +4,7 @@ const axios = require('axios');
 
 const nameUrlPriceItems = async (item) => {
     const url = `https://www.buscape.com.br/search?q=${ item }`;
+
     const { data } = await axios.get(url);
     const $ = cheerio.load(data);
     

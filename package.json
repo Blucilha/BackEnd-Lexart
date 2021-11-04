@@ -2,18 +2,30 @@
   "name": "backend_challenge_fullstack_lexart",
   "version": "1.0.0",
   "description": "Este projeto back é uma parte para a submissão do desafio fullstack.",
-  "main": "index.js",
+  "main": "src/api/server.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "engines": {
     "node": "14.16.1"
   },
-  "keywords": ["scrap web"],
+  "keywords": [
+    "scrap web"
+  ],
   "author": "Blucilhã do Nascimento Dias",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
-    "cheerio": "^1.0.0-rc.10"
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rescue": "^1.1.31",
+    "joi": "^17.4.2",
+    "mongodb": "^4.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
   }
 }
