@@ -43,6 +43,7 @@ const inforCompleteItems = async (item) => {
         const img = $("div.PhotosCarousel_PhotosCarousel__1xgKH > div > div > div > ul > li:nth-child(2) > div > img").attr('src');
         return {
             ...rest,
+            url,
             img,
         };
     }))
