@@ -8,7 +8,9 @@ const createListSearch = rescue(async (req, res) => {
 
     const buscape = await buscapeService.createListSearch(category);
     const mercadoLivre = await mercadoLivreService.createListSearch(category)
-    res.status(sucess.OK).json({ message: [...buscape.results, ...mercadoLivre.results] });
+    res.status(sucess.OK).json({ message: {
+        results: [...buscape.results, ...mercadoLivre.results]
+    } });
 });
 
 module.exports = {
