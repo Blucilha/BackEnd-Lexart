@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes.buscapeRouter);
 app.use(routes.mercadoLivreRouter);
+app.use(routes.allRouter);
 
 app.use(handleError);
 
